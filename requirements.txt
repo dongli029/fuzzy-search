@@ -1,0 +1,5 @@
+re
+json
+fuzzywuzzy
+flask
+flask_sqlalchemy
