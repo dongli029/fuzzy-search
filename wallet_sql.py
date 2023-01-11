@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456@35.223.8.224:3030/wallet'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:@ip:port/database name'
 db = SQLAlchemy(app)
 
 @app.route('/')

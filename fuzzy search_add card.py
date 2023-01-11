@@ -8,7 +8,7 @@ with open('support bank.json', encoding="utf-8") as f:
     bank_card = json.load(f)
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456@35.223.8.224:3030/wallet'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:@ip:port/database name'
 db = SQLAlchemy(app)
 
 #define database model
@@ -21,7 +21,7 @@ class card(db.Model):
 # print(bank_card)
 pattern = r'[A-Za-z]'
 
-# text_arrange
+# text_arrange function
 def text_arrange(input_name):
     for i in input_name:
         if not '\u4e00' <= i <= '\u9fa5':
