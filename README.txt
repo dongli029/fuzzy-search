@@ -13,5 +13,5 @@ You can refer to different function's url description in fuzzy search_add card.p
 
 wallet_sql.py is used to create database in mysql where i created at GCP VM's docker container.
 
-Support cards and banks are list at suppourt bank.json.
+Support cards and banks are listed at suppourt bank.json.
 
